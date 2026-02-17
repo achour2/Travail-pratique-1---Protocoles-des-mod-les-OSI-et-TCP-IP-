@@ -138,7 +138,10 @@ Oui, on identifie clairement l'établissement de la connexion TLS.
 - **Début des données :** Après 48 octets d'en-tête TCP
 - **Premier octet des données :** 47 (hex)
 - **Dernier octet visible :** 0a
-- **Contenu de la requête :**
+- **Contenu de la requête :** Oui. On voit clairement du texte ASCII :
+"GET /wireshark-labs/TCP-wireshark-file1.html HTTP/1.1"
+en-têtes "Host:", "User-Agent:", "Accept:", etc.
+Donc c’est une requête HTTP (texte ASCII) transportée par TCP
 
 
  
